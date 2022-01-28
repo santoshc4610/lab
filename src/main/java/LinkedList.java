@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class LinkedList {
     Node head;
-
+/** This class is to declare the Node of the Linkedlist.
+ * Each node will have a "next" node which contains the pointer to the next node**/
     static class Node
     {
         int data;
