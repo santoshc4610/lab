@@ -1,3 +1,5 @@
+package com.example.lab;
+
 import java.util.Scanner;
 
 public class LinkedList {
