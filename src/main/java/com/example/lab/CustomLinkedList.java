@@ -2,16 +2,16 @@ package com.example.lab;
 
 import java.util.Scanner;
 
-public class LinkedList {
-    Node head;
+public class CustomLinkedList {
+    public static Node head;
 /** This class is to declare the Node of the Linkedlist.
  * Each node will have a "next" node which contains the pointer to the next node**/
-    static class Node
+    public static class Node
     {
         int data;
         Node next;
 
-        Node(int d)
+        public Node(int d)
         {
             data =d;
             next = null;
@@ -19,7 +19,7 @@ public class LinkedList {
 
     }
 
-    public static LinkedList CreateLinkedList(LinkedList list1, int data)
+    public static CustomLinkedList CreateLinkedList(CustomLinkedList list1, int data)
     {
         Node new_node = new Node(data);
         new_node.next = null;
@@ -41,9 +41,9 @@ public class LinkedList {
         return list1;
     }
 
-    public static LinkedList ReverseALinkedList (LinkedList list2)
+    public static CustomLinkedList ReverseALinkedList (CustomLinkedList list2)
     {
-        LinkedList revList = new LinkedList();
+        CustomLinkedList revList = new CustomLinkedList();
         Node curr= list2.head;
         Node prev = null;
         Node next;
@@ -62,7 +62,7 @@ public class LinkedList {
         return revList;
     }
 
-    public static void PrintTheList(LinkedList list)
+    public static void PrintTheList(CustomLinkedList list)
     {
         Node curr_node = list.head;
         while (curr_node != null)
@@ -77,8 +77,8 @@ public static void main (String args[]) {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the number elements for the linked list::");
     int NoOfElements = sc.nextInt();
-    LinkedList list = new LinkedList();
-    LinkedList RevList = new LinkedList();
+    CustomLinkedList list = new CustomLinkedList();
+    CustomLinkedList RevList = new CustomLinkedList();
 
 
     for (int i = 0; i < NoOfElements; i++)
