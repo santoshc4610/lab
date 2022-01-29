@@ -3,6 +3,11 @@ package com.example.lab;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * this program will find the unique characters in a given string and output the kth unique string
+ * **/
+
+
 public class UniqueCharacter {
     public static void main (String args[])
     {
