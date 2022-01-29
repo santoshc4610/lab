@@ -6,7 +6,6 @@ import java.util.*;
  * This program will intake the list of numbers and output the Kth smallest element in it.
  * **/
 
-
 public class KLargestElement {
 
     public static void main(String args[])
@@ -24,14 +23,12 @@ public class KLargestElement {
             num--;
         }
 
-
-        System.out.println("Enter the nth smallest element needed::");
+       System.out.println("Enter the nth smallest element needed::");
        int k=sc.nextInt();
        Integer arr2[] = new Integer[arr1.size()];
        arr2 = arr1.toArray(arr2);
 
        System.out.println("Original Array::"+arr1);
-
        for (int i =0 ; i< arr2.length;i++ )
        {
            for (int j =i+1; j< arr2.length; j++)
@@ -42,14 +39,9 @@ public class KLargestElement {
                     arr2[i] = arr2[j];
                     arr2[j] = temp;
                 }
-
            }
-
        }
-
        System.out.println("The "+k+"th Smallest element is::"+Arrays.asList(arr2).get(k-1));
-
-
     }
 
 }
